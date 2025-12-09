@@ -7,6 +7,9 @@ app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
 def PerformanceIQ_ReadJson(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
 
+
+-- jf commnent
+
     name = req.params.get('name')
     if not name:
         try:
